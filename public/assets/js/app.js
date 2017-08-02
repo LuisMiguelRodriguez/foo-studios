@@ -6,7 +6,7 @@ $(document).ready(function() {
 var apiKey = '6LbeBBCgh5azm84Rz5dQejCJv0h4iiRT';
 
 function getTasks() {
-  $.get('https://api.mlab.com/api/1/databases/foostudios/collections/artwork?apiKey=' + apiKey,
+  $.get('https://api.mlab.com/api/1/databases/foostudios/collections?apiKey=' + apiKey,
 function(data){
   console.log(data);
 });
