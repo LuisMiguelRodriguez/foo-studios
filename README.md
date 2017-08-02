@@ -3,11 +3,11 @@
 
 ## Technologies Used
 
-*Mlab API - calls to our mongodb database  
-*Angular - Front end framework  
-*NodeJS - Serverside technology  
-*BootStrap - Front end design  
-*MongoDB - database  
-*Heroku - Deployment of Project  
+⋅⋅*Mlab API - calls to our mongodb database  
+.*Angular - Front end framework  
+.*NodeJS - Serverside technology  
+.*BootStrap - Front end design  
+.*MongoDB - database  
+.*Heroku - Deployment of Project  
 
 
