@@ -1,0 +1,230 @@
+#firstJumbo{
+	margin: 100px 100px 10px 100px;
+}
+
+#logo{
+	width:100px;
+	height: 100px;
+}
+
+#theImage{
+	position:absolute;
+	top:90px;
+	right:30px;
+}
+
+/*.btn{
+	width:300px;
+	height:100px;
+	font-size:30px;
+	margin-left:200px;
+	padding-top:20px;
+}*/
+
+.jumbotron{
+
+	margin-right:100px;
+	margin-left:100px;
+	background-color:white;
+
+}
+#lifeHeader{
+	text-align:center;
+}
+
+#blankTshirt{
+	margin-right:300px;
+}
+
+.navTabs{
+	margin-top:30px;
+	color:white;
+}
+
+.jumboHeader, #captions, #captions2{
+	margin-left:40px;
+}
+
+/*All content needs a margin-right feature*/
+
+#footerList{
+	margin-left:150px;
+}
+#list4{
+	margin-top:100px;
+}
+footer{
+	background-color:black;
+	color:white;
+}
+
+/* shop and product css*/
+
+#shop{
+	margin-left:7%;
+}
+
+#jumbo{
+	/*background-color:lightgray;*/
+	text-align:center;
+	margin-top:100px;
+}
+
+
+.thumbnail{
+	border:0 none;
+	box-shadow:none;
+}
+
+
+
+.dropdown-menu{
+	margin-bottom:80px;
+}
+
+#mainPic{
+	height:500px;
+	width: auto;
+}
+
+.top-margin {
+	margin-top: 120px;
+}
+
+
+/*after this point this is the product page*/
+/*product page */
+
+.left-column{
+	margin-top:200px;
+}
+
+#main-container {
+	max-width: 1200px;
+	margin:0 auto;
+	padding:15px;
+	display:flex;
+	margin-top: 100px;
+}
+
+/*both columns*/
+
+.left-column{
+	width:65%;
+	position:relative;
+	margin-top:0;
+	padding:0px;
+}
+
+.right-column{
+	width:35%;
+	margin-top:60px;
+}
+
+/*left column*/
+
+.product-picture{
+	width: 350px;
+	height: auto;
+}
+.left-column img{
+	width:100;
+	position: absolute;
+	left:0;
+	top:0;
+	/*opacity:0;*/
+	transition: all 0.3s ease;
+	margin-top: 150px;
+}
+
+.left-column img.active{
+	opacity:1;
+}
+
+/*Product Info*/
+
+.product{
+	border-bottom:1px solid #E1E8EE;
+	margin-bottom:20px;
+}
+
+.product span{
+	font-size: 12px;
+	color:#358ED7;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration:none;
+}
+
+.product h1{
+	font-weight: 300px;
+	font-size:52px;
+	color:#43484D;
+	letter-spacing:-2px;
+}
+
+.product p{
+	font-size: 16px;
+	font-weight: 300;
+	color:#86939E;
+	line-height:24px;
+}
+
+/*Product color*/
+ 
+.product-color{
+	margin-bottom:30px;
+}
+
+.chooseColor div {
+	display:line-block;
+}
+
+.chooseColor input[type="radio"]{
+	display:none;
+}
+
+.chooseColor input[type="radio"]{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	margin: -1px 4px 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+	border-radius: 50px;
+
+}
+
+.chooseColor input[type="radio"] + label span{
+	border:2px solid #FFFFFF;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.33);
+
+}
+
+.color-choose input[type="radio"]#red + label span {
+  background-color: #C91524;
+}
+.color-choose input[type="radio"]#blue + label span {
+  background-color: #314780;
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: #323232;
+}
+
+color-choose input[type="radio"]:checked + label span {
+	background-image: url(image/check-inc.svg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.bioPictures{
+	width:300px;
+}
+
+#square{
+	margin-bottom:50px;
+}
+
+h4{
+	text-align:center;
+}
+
