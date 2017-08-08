@@ -13,7 +13,9 @@ Heroku Link https://foostudios.herokuapp.com/
 
 
 To Run Application Run
+
     npm start 
     or
     node main
     
+To stop Server use Ctrl + C
