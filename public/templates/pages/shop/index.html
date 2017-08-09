@@ -7,80 +7,101 @@
     </div>
   </div>
 
+  <!-- Angular Notes -->
   <div class="container">
-
-	  <div id="shop">
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
-          <div class="thumbnail">
-            <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
-              <div class="caption">
-                <h4>Thumbnail label</h4>
-
-                <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
-              <div class="caption">
-                <h4>Thumbnail label</h4>
-                 <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="mainButton">Shop</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
-              <div class="caption">
-                <h4>Thumbnail label</h4>
-                <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
     <div id="shop">
-
       <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
-  		    <div class="thumbnail">
-            <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
-              <div class="caption">
-                <h4>Thumbnail label</h4>
-
-                <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1" ng-repeat="product in indexController.products" ng-href ="#/shop/{{product.id}}">
           <div class="thumbnail">
             <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
               <div class="caption">
-                <h4>Thumbnail label</h4>
-                <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
+                <h4>{{product.name}}</h4>
+                <a href="#" class="btn btn-default btn-xs pull-right" role="button"></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
             </div>
           </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="thumbnail">
-            <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
-              <div class="caption">
-                <h4>Thumbnail label</h4>
-                <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
-            </div>
-          </div>
+    <!-- End of Col -->
         </div>
       </div>
     </div>
 
   </div>
+ <!-- END Angular Notes -->
+
+ <!--  <div class="container">
+ 
+     <div id="shop">
+     <div class="row">
+ 
+       <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
+         <div class="thumbnail">
+           <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
+             <div class="caption">
+               <h4>Thumbnail label</h4>
+ 
+               <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
+           </div>
+         </div>
+       </div>
+ 
+       <div class="col-xs-12 col-sm-4 col-md-3">
+         <div class="thumbnail">
+           <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
+             <div class="caption">
+               <h4>Thumbnail label</h4>
+                <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="mainButton">Shop</a>
+           </div>
+         </div>
+       </div>
+ 
+       <div class="col-xs-12 col-sm-4 col-md-3">
+         <div class="thumbnail">
+           <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
+             <div class="caption">
+               <h4>Thumbnail label</h4>
+               <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
+           </div>
+         </div>
+       </div>
+ 
+     </div>
+ 
+   </div>
+ 
+   <div id="shop">
+ 
+     <div class="row">
+       <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
+         <div class="thumbnail">
+           <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
+             <div class="caption">
+               <h4>Thumbnail label</h4>
+ 
+               <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
+           </div>
+         </div>
+       </div>
+ 
+       <div class="col-xs-12 col-sm-4 col-md-3">
+         <div class="thumbnail">
+           <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
+             <div class="caption">
+               <h4>Thumbnail label</h4>
+               <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
+           </div>
+         </div>
+       </div>
+ 
+       <div class="col-xs-12 col-sm-4 col-md-3">
+         <div class="thumbnail">
+           <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
+             <div class="caption">
+               <h4>Thumbnail label</h4>
+               <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ 
+ </div>
+  -->
