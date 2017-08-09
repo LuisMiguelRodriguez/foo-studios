@@ -1,56 +1,74 @@
-	<main class="container" id="main-container">
+<!-- Left side of product page -->
+<div class="container" id="mainContainer">
+	<div class="row">
+			<div class="col-xm-12 col-sm-12 col-sm-offset-1 col-md-6 col-md-offset-0">
+			<img id= "mainPic" src="https://ae01.alicdn.com/kf/HTB189ATQXXXXXXlXVXXq6xXFXXXF/Tshirts-Custom-Printed-font-b-notorious-b-font-font-b-big-b-font-Men-Design-A.jpg" height="500px" width="500px">
+			<!-- <img data-image="black" src="images/black.png" alt="">
+			<img data-image="blue" src="images/blue.png" alt="">
+			<img data-image="red" class="active" src="images/red.png" alt=""> -->
+		</div>
+	<div class="col-xm-12 col-sm-12 col-sm-offset-1 col-md-6 col-md-offset-0">
+				<div class="right-side">
+			<!--Product Description -->
+					<div class="product-description">
+						<span>Choose Your T-Shirt</span>
+						<h1>Biggie Smalls</h1>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellendus expedita, quo ab fugit impedit id quidem soluta velit laborum aliquam nemo architecto, eos illo vel culpa earum obcaecati hic.</p>
 
-  <div class="left-column">
-      <img class="product-picture" data-image="black" src="https://s-media-cache-ak0.pinimg.com/originals/f9/f4/8d/f9f48d572ef06bbe41bcb0644719ddfc.jpg" alt="">
-      <img class="product-picture" data-image="blue" src="http://www.outlookweekly.net/images/pforf.weebly.com/uploads/4/9/2/9/49298831/s218566430444065912_p8_i4_w900.jpeg" alt="">
-      <img class="product-picture" data-image="red" class="active" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEoo3wVdorSlE5kkyAXnW7_TQPcF5Ks4biAzsoqfN44r_8dXo" alt="">
-  </div>
+					</div>
+					<!-- Product information -->
+					<div class="product-info">
+		<!-- Product Color -->
+						<div class="product-color">
+							 <span>Color</span>
+							<div class="choose-color">
+								<div class="radio-inline">
+									<input data-image="red" type="radio" id="red" name="color" value="red" checked>
+									<label for="red"></label>
+								</div>
+								<div class="radio-inline">
+									 <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+									<label for="blue"></label>
+								</div>
+								<div class="radio-inline">
+									<input data-image="black" type="radio" id="black" name="color" value="black">
+									<label for="black"></label>
+								</div>
+							</div>
+						</div>
+				 <!-- Size chart -->
+						<div class="size-chart">
+							<span>Choose Size</span>
 
-  <!-- <div class="container">
-      <img id= "mainPic" src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
-  </div>
-   -->
-  <div class="right-column">
+							<div class="choose-size">
+								<button>Xsmall</button>
+								<button>Small</button>
+								<button>Medium</button>
+								<button>Large</button>
+								<button>XLarge</button>
+							</div>
+					 <!--   Choose Quantity -->
+						<div id="quantity">
+							<div class="form-group form-group-sm" >
+								<label for="sel1">Quantity</label>
+								<select class="form-control" id="sel1">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							 </div>
 
-    <div class="product">
-        <span>T-Shirt</span>
-        <h1>Tupac Shakur</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liber</p>
-    </div>
-
-  <div class="productInfo">
-    <div class= "product-color">
-         <span>Color</span>
-        <div class="chooseColor">
-            <div>
-              <input data-image="white" type="radio" id="white" name="color" value="white">White
-            </div>
-            <div>
-              <input data-image="blue" type="radio" id="black" name="color" value="white">Black
-            </div>
-            <div>
-            <input data-image="blue" type="radio" id="blue" name="color" value="white">Blue
-            </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="size-chart">
-    <span>Choose Size</span>
-      <div class="choose-size">
-        <button>Xsmall</button>
-        <button>Small</button>
-        <button>Medium</button>
-        <button>Large</button>
-        <button>Xlarge</button>
-      </div>
-
-      <a href="#"> Have your own desing? find out how you too can be part of the new apparel revolution.</a>
-
-      <div class="product-price">
-          <span>148$</span>
-          <a href="#" class="cart-btn">Add to cart</a>
-      </div>
-   </div>
- </div>
-</main>
+						</div>
+								<a href="#">Want to Create Your Own? Find out how</a>
+						</div>
+					</div>
+	<!-- Product Pricing -->
+					<div class="product-price">
+						<span id="price">$30</span>
+						<a href="#" class="cart-btn">Add to cart</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
