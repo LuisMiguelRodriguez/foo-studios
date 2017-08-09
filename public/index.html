@@ -3,10 +3,10 @@
 	<head>
 		<title>Foo Studios</title>
 
-	  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 
@@ -28,23 +28,24 @@
 			      <ul class="nav navbar-nav navbar-right">
 			      	<li class="navTabs"><a href="#/home">Home</a></li>
 			      	<li class="navTabs"><a href='#/about'>About</a></li>
-			        <li class="navTabs"><a href="#"> Design Studio</a></li>
+			        <li class="navTabs"><a href="#/designStudio"> Design Studio</a></li>
 			      	<li class="navTabs"><a href="#/shop">Shop</a></li>
 			        <li class="navTabs"><a href="#/contact"> Contact</a></li>
 			        <li class="navTabs"><a href="#/product"> Product</a></li>
+			        <li class="navTabs"><a href="#/product-form">Insert Product</a></li>
 			      </ul>
 			    </div>
 
 			  </div>
-		</nav>
+			</nav>
 
-		<div class="content" ng-view>
+		<div id="mainContent"class="content" ng-view>
 
 		</div>
 
 		<footer>
 			<div class="row">
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-3 col-md-4">
 					<span>
 						<ul id="footerList">
 							<li><a href="#">FAQ</a></li>
@@ -53,13 +54,13 @@
 						</ul>
 					</span>
 				</div>
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-3 col-md-4">
 					<span>
 						<h2>About Us</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat corrupti illum sapiente quos! Dolorem suscipit iusto inventore voluptatem hic nisi asperiores atque quibusdam, praesentium aliquid accusamus, explicabo quod est molestiae.</p>
 					</span>
 				</div>
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-3 col-md-4">
 					<span>
 						<h2>New Releases</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, distinctio qui a saepe commodi illo, culpa voluptas et reiciendis veniam aut corporis! Aliquam fugit repellendus sed ducimus quis praesentium molestiae.
