@@ -272,9 +272,9 @@ h4{
 @media screen, (min-width: 300px) and (orientation: landscape){
 
 
-	.navbar navbar-inverse navbar-fixed-top{
+/*	.navbar navbar-inverse navbar-fixed-top{
 		width:340px;
-	}
+	}*/
 
 	.navbar-toggle{
 		margin-right: 30px;
