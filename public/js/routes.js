@@ -26,7 +26,9 @@ angular.module('Store')
         controllerAs: 'showController'
       })
       .when('/designStudio', {
-        templateUrl: 'templates/pages/designStudio/index.html'
+        templateUrl: 'templates/pages/designStudio/index.html',
+        controller: 'DesignsIndexController',
+        controllerAs: 'designsIndexController'
       })
       .when('/product-form', {
         templateUrl: 'templates/pages/product-form/index.html'
