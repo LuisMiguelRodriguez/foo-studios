@@ -21,7 +21,7 @@ angular.module('Store')
         templateUrl: 'templates/pages/home/index.html'
       })
       .when('/shop/:id', {
-        templateUrl: 'templates/pages/shop/index.html',
+        templateUrl: 'templates/pages/product/index.html',
         controller: 'ProductIndexController',
         controllerAs: 'showController'
       })
