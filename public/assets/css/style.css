@@ -7,6 +7,15 @@ body {
   flex-direction: column;
 }
 
+p{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.homeCaption {
+  text-align:center;
+}
+
 .content {
   flex: 1 0 auto;
 }
@@ -15,13 +24,22 @@ body {
   margin-top: 120px;
 }
 
-#firstJumbo {
-  margin: 100px 100px 10px 100px;
+.mockupShirt{
+  width:250px;
+}
+
+.jumbotron h1{
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size:70px;
 }
 
 #logo {
   width: 100px;
   height: 100px;
+}
+
+.homeCaption p{
+  text-align:center;
 }
 
 #graffitiImage {
