@@ -1,100 +1,14 @@
-(function(){angular.module("Store", ['ngRoute'])
-	.controller('ProductIndexController', function($http, $routeParams){
-		this.products = productData;
-	});
+(function(){angular.module("Store")
+	.controller('ProductIndexController', ['$http', '$routeParams', function($http, $routeParams){
+		var controller = this;
+		$http({method: 'GET', url: 'https://api.mlab.com/api/1/databases/foostudios/collections/artwork/' + $routeParams.id +'?apiKey=6LbeBBCgh5azm84Rz5dQejCJv0h4iiRT'})
+			.success(function(data) {
+ 				controller.product = data;
+ 				console.log(data);
+ 				console.log($routeParams.id);
+ 				console.log(data.param.name);
+ 				console.log(controller);
+ 			});
+	}]);
 
-	var productData = [
-	{
-		name:'Struggles',
-		shortDescription: 'Doing whatever it to take surive',
-		images: [
-			{
-			full: 'nycsample.jpg',
-			thumb: 'nycsample.jpg'
-			}],
-		canPurchase: true,
-		description:'The struggles that America face everyday.',
-		price: 50.00,
-		qty: 50,
-		qtyOption:[
-		{
-			one:1,
-			two:2,
-			three:3,
-			four:4,
-			five:5
-
-		}],
-		
-		sku: 'A100',
-		display: true,
-		production: true,
-		votes:1000,
-		expDate:07022017,
-		sizes:[
-		{
-			xsmall:	'X-Small',
-			small:	'Small',
-			medium:	'Medium',
-			large: 'Large',	
-			xlarge:	'X-Large'
-		}],
-		reviews:[
-		{
-			stars:5,
-			body:"I love this product!",
-			author:"jma@gmail.com"
-		}],
-
-	},
-
-	{
-		name:'Pain',
-		shortDescription: 'Losing it all',
-		images: [
-		{
-			full: 'nycsample.jpg',
-			thumb: 'nycsample.jpg'
-		}],
-		canPurchase: false,
-		description:'The struggles that America face everyday.',
-		price: 50.00,
-		sku: 'A200',
-		display: true,
-		production: true,
-		votes:0,
-		expDate:07022017,
-		reviews:[
-		{
-			stars:5,
-			body:"I love this product!",
-			author:"jma@gmail.com"
-		}],
-
-	},
-
-	{
-		name:'Love',
-		shortDescription: 'Lust',
-		images: [
-		{
-			full: 'nycsample.jpg',
-			thumb: 'nycsample.jpg'
-		}],
-		canPurchase: false,
-		description:'The struggles that America face everyday.',
-		price: 50.00,
-		sku: 'A300',
-		display: true,
-		production: true,
-		votes:0,
-		expDate:07022017,
-		reviews:[
-		{
-			stars:5,
-			body:"I love this product!",
-			author:"jma@gmail.com"
-		}],
-	}
-];
 })();
