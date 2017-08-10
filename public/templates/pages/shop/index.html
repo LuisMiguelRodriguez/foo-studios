@@ -13,12 +13,10 @@
      <div class="row">
        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1" ng-repeat="product in indexController.products">
          <div class="thumbnail">
-           <img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg">
+           <a ng-href ="#/shop/{{product._id.$oid}}"><img src="http://www.3in1design.com/wp-content/uploads/2016/05/blank_tshirt.jpg"></a>
              <div class="caption">
-               <h4>{{product.param.name}}</h4>
-               <a ng-href ="#/shop/{{product._id.$oid}}"> HI! </a>
-               <a href="#" class="btn btn-info btn-xs" id="mainButton">Shop</a>
-           </div>
+               <h4><a ng-href ="#/shop/{{product._id.$oid}}">{{product.param.name}}</a></h4>
+               <span class="price">${{product.param.price}}</span>
          </div>
 <!--    End of Col -->
        </div>
