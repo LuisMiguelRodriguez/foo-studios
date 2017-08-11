@@ -31,9 +31,9 @@ angular.module('Store')
         controllerAs: 'designsIndexController'
       })
       .when('/cart', {
-        templateUrl: 'templates/pages/cart/index.html'
+        templateUrl: 'templates/pages/cart/index.html',
+        controller: 'CartController'
       })
-
       .when('/product-form', {
         templateUrl: 'templates/pages/product-form/index.html'
       });
