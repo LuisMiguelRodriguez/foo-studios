@@ -30,6 +30,10 @@ angular.module('Store')
         controller: 'DesignsIndexController',
         controllerAs: 'designsIndexController'
       })
+      .when('/cart', {
+        templateUrl: 'templates/pages/cart/index.html'
+      })
+
       .when('/product-form', {
         templateUrl: 'templates/pages/product-form/index.html'
       });
