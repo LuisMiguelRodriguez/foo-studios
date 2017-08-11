@@ -347,3 +347,14 @@ h4 {
 #insertProduct{
   margin-top:100px;
 }
+
+.caption > h4 > span{
+  position:relative;
+}
+.price{
+  position: absolute;
+    left: 0;
+    bottom: -18px;
+    font-size: 14px;
+    font-weight: normal;
+}
