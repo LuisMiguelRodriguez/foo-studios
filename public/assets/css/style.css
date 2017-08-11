@@ -21,7 +21,7 @@ p{
 }
 
 #mainContent {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .mockupShirt{
@@ -309,6 +309,11 @@ h4 {
   height: 100%;
 }
 
+.footer {
+  flex-shrink: 1; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  margin-top:50px;
+  padding: 20px;
+}
 
 /* Making most pages mobile friendly */
 
