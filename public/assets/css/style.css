@@ -503,3 +503,11 @@ h4 {
 #cartStyle{
   min-height: 300px;
 }
+.cartBtn{
+  border-radius:15px;
+  background-color:transparent;
+  border-color:#82818A;
+  color:#82818A;
+  outline:0;
+  font-size: 20px;
+}
