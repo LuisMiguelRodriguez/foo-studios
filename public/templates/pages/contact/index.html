@@ -51,9 +51,39 @@
 </div>
 
 <div class="container">
+
 	<div class="row">
 
 
 
 	</div>
+</div>
+
+<div class="container">
+
+	<h1 class="text-center">Locate the Foos </h1><br>
+
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+
+	<script>
+
+   function myMap() {
+
+      var mapOptions = {
+         center:new google.maps.LatLng(33.645052,-117.834781),
+         zoom:7
+      }
+
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+      var marker = new google.maps.Marker({
+         position: new google.maps.LatLng(33.645052,-117.834781),
+         map: map,
+      });
+   }
+
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBilJYgdpMwOUEsEzRI4nLvVpKHVVm1gcU&callback=myMap"></script>
+
 </div>
