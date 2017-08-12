@@ -7,6 +7,15 @@ body {
   flex-direction: column;
 }
 
+h1{
+  font-family: 'Audiowide', 'Poiret one', cursive;
+}
+
+h2{
+  font-family: 'Oxygen', sans-serif;
+
+}
+
 p{
   font-family: 'Poppins', sans-serif;
 
@@ -444,7 +453,7 @@ h4 {
 
 /* Footer */
 .footer{
-  min-width: 960px;
+  min-width: 350px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 10px;
