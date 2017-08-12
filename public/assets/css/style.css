@@ -377,6 +377,11 @@ h4 {
   /*	.navbar navbar-inverse navbar-fixed-top{
 		width:340px;
 	}*/
+/*
+  .jumbotron{
+    margin-left:0px;
+  }*/
+
   .navbar-toggle {
     margin-right: 30px;
     padding-top: 25px;
@@ -404,6 +409,7 @@ h4 {
   margin-top:100px;
 }
 
+/* Shirt Alignment */
 .caption > h4 > span{
   position:relative;
 }
@@ -417,6 +423,14 @@ h4 {
 .clear {
 	clear:both;
 }
+
+/*Returns and Shipping */
+
+.holiday{
+  margin-bottom:20px;
+}
+
+/* Footer */
 .footer{
   width: 100%;
 	padding-top: 20px;
