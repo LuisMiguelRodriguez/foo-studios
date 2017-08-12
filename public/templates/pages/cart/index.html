@@ -22,7 +22,12 @@
 			      <tr>
 			        <td><a ng-href ="#/shop/{{cart.item._id.$oid}}"><img src="{{cart.item.param.main}}" height="80;" width="80px"></a></td>
 			        <td>
-						{{cart.item.param.name}}
+      
+			        	<ul class="list-unstyled">
+							<li>{{cart.item.param.name}}</li>
+							<li>Price: {{cart.item.param.price | currency}}</li>
+						</ul>
+
 			        </td>
 			        <td>Price: {{cart.item.param.price | currency}}</td>
 			        <td>$200</td>
