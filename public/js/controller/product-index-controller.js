@@ -16,12 +16,11 @@
 	          'thumbnail':data.param.thumbnail,
 	          'description':data.param.description,
 	          'main':data.param.main,
-	          'incart':true
+	          'incart': true
 					}
 				};
 
 				CartService.id = $routeParams.id;
-
 
  			});
 	}]);
