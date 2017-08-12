@@ -1,45 +1,44 @@
 <div class="container-fluid">
-	<div id = "jumbo">
-	<div class="jumbotron">
-	<h1>My Cart</h1>
-	</div>
+	<div id="jumbo">
+			<h1 class="headline">My Cart</h1>
+
 	</div>
 </div>
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-3 col-md-3">
 			<div class="container" id="cartStyle">
-			  <table class="table">
-			    <thead>
-			      <tr>
-			        <th>Product</th>
-			        <th>Item</th>
-			        <th>Price</th>
-			        <th>Quantity</th>
-			      </tr>
-			    </thead>
-			    <tbody ng-repeat="cart in shoppingCtrl.products">
-			      <tr>
-			        <td><a ng-href ="#/shop/{{cart.item._id.$oid}}"><img src="{{cart.item.param.main}}" height="80;" width="80px"></a></td>
-			        <td>
-      
-			        	<ul class="list-unstyled">
-							<li>{{cart.item.param.name}}</li>
-							<li>Price: {{cart.item.param.price | currency}}</li>
-						</ul>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Product</th>
+							<th>Item</th>
+							<th>Price</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody ng-repeat="cart in shoppingCtrl.products">
+						<tr>
+							<td><a ng-href="#/shop/{{cart.item._id.$oid}}"><img src="{{cart.item.param.main}}" height="80;" width="80px"></a></td>
+							<td>
 
-			        </td>
-			        <td>{{cart.item.param.price | currency}}</td>
-			        <td>1</td>
-			      </tr>
-			    </tbody>
-			  </table>
-	<div class="row">
-		<div class="col-xs-12 col-sm-4 col-md-4 pull-right">
-			<button class="cartBtn btn-primary btn-sm">EMPTY CART</button>
-			<button class="cartBtn btn-primary btn-sm">CHECKOUT</button>
-		</div>
-	</div>
+								<ul class="list-unstyled">
+									<li>{{cart.item.param.name}}</li>
+									<li>Price: {{cart.item.param.price | currency}}</li>
+								</ul>
+
+							</td>
+							<td>{{cart.item.param.price | currency}}</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4 pull-right">
+						<button class="cartBtn btn-primary btn-sm">EMPTY CART</button>
+						<button class="cartBtn btn-primary btn-sm">CHECKOUT</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
