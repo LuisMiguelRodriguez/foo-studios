@@ -83,8 +83,18 @@ p{
   color:#82818A;
   padding:15px 40px;
   outline:0;
+  margin-bottom:25px;
 }
 
+/*gallery in frontpage after design now button=========================*/
+
+#front-product img{
+  width :700px;
+  height: auto;
+}
+#front-product{
+  text-align:center;
+}
 
 
 #logo {
@@ -374,14 +384,11 @@ h4 {
 
 /* Making most pages mobile friendly */
 
+
+
 @media screen, (min-width: 300px) and (orientation: landscape) {
-  /*	.navbar navbar-inverse navbar-fixed-top{
-		width:340px;
-	}*/
-/*
-  .jumbotron{
-    margin-left:0px;
-  }*/
+ 
+
 
   .navbar-toggle {
     margin-right: 30px;
@@ -397,6 +404,10 @@ h4 {
     margin-left: 20px;
   }
 }
+
+
+
+
 
 #price {
   margin-bottom: 20px;
