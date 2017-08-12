@@ -7,13 +7,8 @@ body {
   flex-direction: column;
 }
 
-h1{
+h1, h2{
   font-family: 'Audiowide', 'Poiret one', cursive;
-}
-
-h2{
-  font-family: 'Oxygen', sans-serif;
-
 }
 
 p{
@@ -182,7 +177,7 @@ footer {
 
 #mainPic {
   height: 500px;
-  width: auto;
+  width: 100%;
 }
 
 .top-margin {
