@@ -31,10 +31,9 @@
 			      <ul class="nav navbar-nav navbar-right">
 			      	<li class="navTabs"><a href="#/home">Home</a></li>
 			      	<li class="navTabs"><a href='#/about'>About</a></li>
-			        <li class="navTabs"><a href="#/designStudio"> Design Studio</a></li>
+			        <!-- <li class="navTabs"><a href="#/designStudio"> Design Studio</a></li> -->
 			      	<li class="navTabs"><a href="#/shop">Shop</a></li>
 			        <li class="navTabs"><a href="#/contact"> Contact</a></li>
-			        <li class="navTabs"><a href="#/product"> Product</a></li>
 			        <li class="navTabs"><a href="#/product-form">Insert Product</a></li>
 			        <li class="navTabs"><a href="#/cart">Cart</a></li>
 			      </ul>
@@ -44,42 +43,52 @@
 			</nav>
 
 		<div id="mainContent" class="content" ng-view>
-
 		</div>
+<div class="clear"></div>
 
 		<footer class="footer">
-			<div class="row">
-				<div class="col-xs-12 col-md-4">
-					<span>
-						<ul id="footerList">
 
-							<li><a href="#">CONTACT</a></li>
-							<li><a href="#">SHOP</a></li>
-						</ul>
-					</span>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<span>
-						<h2>About Us</h2>
-						<p>Foo Studios Design set out to change the way custom t-shirts are done. Our goal was to make it easier, faster, and more convenient than ever to get quality custom apparel printed and delivered direct to our customers.</p>
-					</span>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<span>
-						<h2>New Releases</h2>
-						<p>Check out the latest uploaded shirts and vote to see the best one printed on a shirt. Keep coming back and do not be afraid food. Click our design studio and make things happen.
-						</p>
-					</span>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<span>
+							<h2>Shopping Info</h2>
+							<ul id="footerList" class="list-unstyled" >
+								<li><a href="#">BROWSE OUR DESIGNS</a></li>
+								<li><a href="#">RETURN POLICY</a></li>
+								<li><a href="#">SHIPPING INFO</a></li>
+								<li><a href="#">CONTACT US</a></li>
+							</ul>
+						</span>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<span>
+							<h2>Foo Studios</h2>
+								<ul id="footerList" class="list-unstyled" >
+									<li><a href="#">ABOUT</a></li>
+									<li><a href="#">CONTACT US</a></li>
+								</ul>
+						</span>
+					</div>
+					<!-- <div class="col-xs-12 col-md-4">
+						<span>
+							<h2>New Releases</h2>
+							<p>Check out the latest uploaded shirts and vote to see the best one printed on a shirt. Keep coming back and do not be afraid food. Click our design studio and make things happen.
+							</p>
+						</span>
+					</div> -->
+
 				</div>
 			</div>
 		</footer>
+
 
 		<script src="/js/vendor/jquery.js"></script>
 		<script
 		  src="https://code.jquery.com/jquery-3.2.1.min.js"
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
-<<<<<<< HEAD
+
 		  <script>
 
 			$('.navbar-collapse a').click(function(){
@@ -87,10 +96,7 @@
 			});
 
 		</script>
-		
-=======
 
->>>>>>> route2cart
 		<script src="/js/vendor/bootstrap.js"></script>
 		<script src="/js/vendor/angular.js"></script>
 		<script src="/js/vendor/angular-route.js"></script>
