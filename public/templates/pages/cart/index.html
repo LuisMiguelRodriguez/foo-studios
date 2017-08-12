@@ -14,20 +14,22 @@
 			      <tr>
 			        <th>Product</th>
 			        <th>Item</th>
+			        <th>Price</th>
 			        <th>Quantity</th>
-			        <th>Total</th>
 			      </tr>
 			    </thead>
 			    <tbody ng-repeat="cart in shoppingCtrl.products">
 			      <tr>
 			        <td><a ng-href ="#/shop/{{cart.item._id.$oid}}"><img src="{{cart.item.param.main}}" height="80;" width="80px"></a></td>
 			        <td>
+      
 			        	<ul class="list-unstyled">
 							<li>{{cart.item.param.name}}</li>
 							<li>Price: {{cart.item.param.price | currency}}</li>
 						</ul>
+
 			        </td>
-			        <td>john@example.com</td>
+			        <td>Price: {{cart.item.param.price | currency}}</td>
 			        <td>$200</td>
 			      </tr>
 			    </tbody>
