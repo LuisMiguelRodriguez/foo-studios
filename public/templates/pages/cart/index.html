@@ -1,12 +1,14 @@
+<div class="container-fluid">
+	<div id = "jumbo">
+	<div class="jumbotron">
+	<h1>My Cart</h1>
+	</div>
+	</div>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-4 col-md-3">
-<<<<<<< HEAD
 			<div class="container" >
-=======
-			<div class="container">
->>>>>>> 08bef5917cfc207bfa2619399bd5792d8923709d
-			  <h1>My Cart</h1>
 			  <table class="table">
 			    <thead>
 			      <tr>
@@ -18,11 +20,11 @@
 			    </thead>
 			    <tbody ng-repeat="cart in shoppingCtrl.products">
 			      <tr>
-			        <td>John</td>
+			        <td><a ng-href ="#/shop/{{cart.item._id.$oid}}"><img src="{{cart.item.param.main}}" height="80;" width="80px"></a></td>
 			        <td>
 			        	<ul class="list-unstyled">
 							<li>{{cart.item.param.name}}</li>
-							<li>Price</li>
+							<li>{{cart.item.param.price | currency}}</li>
 						</ul>
 			        </td>
 			        <td>john@example.com</td>

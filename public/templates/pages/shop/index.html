@@ -9,23 +9,19 @@
 
 <!--   Angular Notes -->
  <div class="container">
-   <div id="shop">
-     <div class="row">
-       <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1" ng-repeat="product in indexController.products">
-         <div class="thumbnail">
-           <a ng-href ="#/shop/{{product._id.$oid}}"><img src="{{product.param.main}}"></a>
-             <div class="caption">
-               <h4>
-                 <span><a ng-href ="#/shop/{{product._id.$oid}}">{{product.param.name}}</a></span>
-                 <br>
-                 <span class="price">${{product.param.price}}</span>
-               </h4>
-
-         </div>
-<!--    End of Col -->
-       </div>
+      <div class="row">
+         <div class="col-xs-12 col-sm-4 col-md-4" ng-repeat="product in indexController.products">
+           <div class="thumbnail">
+             <a ng-href ="#/shop/{{product._id.$oid}}"><img src="{{product.param.main}}"></a>
+               <div class="caption">
+                 <h4>
+                   <span><a ng-href ="#/shop/{{product._id.$oid}}">{{product.param.name}}</a></span>
+                   <br>
+                   <span class="price">${{product.param.price}}</span>
+                 </h4>
+                </div>
+            </div>
+        </div>
      </div>
-   </div>
-
- </div>
+  </div>
  <!-- END Angular Notes -->
