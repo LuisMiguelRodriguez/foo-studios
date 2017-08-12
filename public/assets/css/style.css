@@ -99,7 +99,51 @@ p{
 }
 #front-product{
   text-align:center;
+  margin-bottom: 30px;
 }
+
+#SetButton{
+  border-radius:15px;
+  background-color: transparent;
+  border-color:#AC9976;
+  color:#AC9976;
+  padding:9px 45px;
+  outline:0;
+}
+
+
+/*these are the icons======================================*/
+
+#icons img{
+  height:85px;
+  width: auto;
+}
+
+#icons {
+  text-align:center;
+  padding-bottom:10px;
+  margin-top:20px;
+}
+/*end of icons ====================================================*/
+
+/*The Last haeder and container in the front page=================*/
+#lastHeader h1{
+  text-align:center;
+  font-family: 'Audiowide','Poiret one', cursive;
+  margin-bottom:50px;
+  font-size:50px;
+  border-top:1px solid;
+  padding-top:75px;
+}
+
+/*Last container on front page========================*/
+
+#lastContainer{
+  text-align: center;
+  margin-bottom:30px;
+}
+
+
 
 
 #logo {
