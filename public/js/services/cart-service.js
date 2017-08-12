@@ -8,6 +8,8 @@
 
     self.id = '';
 
+    self.shoppingCart = {};
+
 
 	}]);
 

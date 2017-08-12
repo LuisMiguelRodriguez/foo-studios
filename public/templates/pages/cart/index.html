@@ -1,8 +1,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-4 col-md-3">
-			<div class="container">
-			  <h1>My Cart</h1>        
+			<div class="container" >
+			  <h1>My Cart</h1>
 			  <table class="table">
 			    <thead>
 			      <tr>
@@ -12,28 +12,16 @@
 			        <th>Total</th>
 			      </tr>
 			    </thead>
-			    <tbody>
+			    <tbody ng-repeat="cart in shoppingCtrl.products">
 			      <tr>
 			        <td>John</td>
 			        <td>
 			        	<ul class="list-unstyled">
-							<li>Title</li>
+							<li>{{cart.item.param.name}}</li>
 							<li>Price</li>
 						</ul>
 			        </td>
 			        <td>john@example.com</td>
-			        <td>$200</td>
-			      </tr>
-			      <tr>
-			        <td>Mary</td>
-			        <td>Moe</td>
-			        <td>mary@example.com</td>
-			        <td>$200</td>
-			      </tr>
-			      <tr>
-			        <td>July</td>
-			        <td>Dooley</td>
-			        <td>july@example.com</td>
 			        <td>$200</td>
 			      </tr>
 			    </tbody>

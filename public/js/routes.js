@@ -36,5 +36,10 @@ angular.module('Store')
       })
       .when('/product-form', {
         templateUrl: 'templates/pages/product-form/index.html'
+      })
+      .when('/shoppingCart',{
+        templateUrl: 'templates/pages/cart/index.html',
+        controller: 'ShoppingCartController',
+        controllerAs: 'shoppingCtrl'
       });
   });

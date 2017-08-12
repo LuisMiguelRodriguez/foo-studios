@@ -7,20 +7,33 @@
 
 		var item = CartService.cartItem;
 
-		$.ajax({
-			url: "https://api.mlab.com/api/1/databases/foostudios/collections/artwork/" + CartService.id + "?apiKey=6LbeBBCgh5azm84Rz5dQejCJv0h4iiRT",
-		  data: JSON.stringify( { "$set" :  CartService.cartItem }),
-		  type: "PUT",
-		  contentType: "application/json" } );
-			console.log('in controller');
+		// $.ajax({
+		// 	url: "https://api.mlab.com/api/1/databases/foostudios/collections/artwork/" + CartService.id + "?apiKey=6LbeBBCgh5azm84Rz5dQejCJv0h4iiRT",
+		//   data: JSON.stringify( { "$set" :  CartService.cartItem }),
+		//   type: "PUT",
+		//   contentType: "application/json" } );
+		// 	console.log('in controller');
 
 			// $http.get('https://api.mlab.com/api/1/databases/foostudios/collections/artwork?apiKey=6LbeBBCgh5azm84Rz5dQejCJv0h4iiRT')
 			// 	.success(function(data) {
 			// 		console.log(data);
 			// 		console.log("in get request car controller");
 			// 	});
+
+
 			$http.post('https://api.mlab.com/api/1/databases/foostudios/collections/cart?apiKey=6LbeBBCgh5azm84Rz5dQejCJv0h4iiRT',
 			{item});
+
+			var items = this;
+			items.products = [];
+
+			$http.get('https://api.mlab.com/api/1/databases/foostudios/collections/cart?apiKey=6LbeBBCgh5azm84Rz5dQejCJv0h4iiRT')
+				.success(function(data){
+					CartService.shoppingCart = data;
+					console.log(data);
+					items.products = CartService.shoppingCart;
+					console.log('Cart Service ' + items.products);
+				});
 
 
 	}]);
