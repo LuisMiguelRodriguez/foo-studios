@@ -69,11 +69,13 @@ p{
   font-size:50px;
   padding-bottom:10px;
   border-bottom:1px solid;
+  font-family: 'Audiowide','Poiret one', cursive;
 
 }
 #secondContainer p{
   font-size:18px;
   padding:10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #designButton{
@@ -179,9 +181,8 @@ footer {
 }
 
 #mainContainer {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
-  margin-top: 130px;
 }
 
 .product-description {
