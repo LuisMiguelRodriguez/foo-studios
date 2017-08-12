@@ -35,7 +35,11 @@ angular.module('Store')
         controller: 'CartController'
       })
       .when('/returns', {
-        templateUrl: 'templates/pages/returns/index.html'      })
+        templateUrl: 'templates/pages/returns/index.html'      
+      })
+      .when('/submission', {
+        templateUrl: 'templates/pages/submission/index.html'      
+      })
       .when('/product-form', {
         templateUrl: 'templates/pages/product-form/index.html'
       })
