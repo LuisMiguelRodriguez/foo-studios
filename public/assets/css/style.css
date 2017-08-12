@@ -51,15 +51,15 @@ p{
 .headline{
   padding-bottom:100px;
 
-
 }
 #main-button{
   border-radius:15px;
   background-color:transparent;
   border-color:#82818A;
   color:#82818A;
-  margin-top:100px;
-  font-size: 50px;
+  margin-top:25px;
+  font-size: 40px;
+  padding:15px 40px;
 }
 
 #main-button:focus{
@@ -71,9 +71,7 @@ p{
 #secondContainer{
   text-align: center;
   font-family:'Audiowide','Poiret one', cursive;
-
 }
-
 #secondContainer h2{
   font-size:50px;
   padding-bottom:10px;
@@ -95,6 +93,7 @@ p{
   padding:15px 40px;
   outline:0;
   margin-bottom:25px;
+  font-size: 30px;
 }
 
 /*gallery in frontpage after design now button=========================*/
