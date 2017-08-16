@@ -63,9 +63,13 @@
 				</div>
 <!-- Product Pricing -->
 				<div class="product-price">
+
 					<span id="price">{{showController.product.param.price | currency }}</span>
-					<a href="#/cart" class="cart-btn">Add to cart</a>
+
+					<ngcart-addtocart id="{{showController.product.param.name}}" name="{{showController.product.param.name}}" price="{{showController.product.param.price}}" quantity="1" quantity-max="5">Add to Cart</ngcart-addtocart>
+					
 				</div>
+
 			</div>
 		</div>
 	</div>

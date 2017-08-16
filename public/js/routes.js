@@ -30,15 +30,11 @@ angular.module('Store')
         controller: 'DesignsIndexController',
         controllerAs: 'designsIndexController'
       })
-      .when('/cart', {
-        templateUrl: 'templates/pages/cart/index.html',
-        controller: 'CartController'
-      })
       .when('/returns', {
-        templateUrl: 'templates/pages/returns/index.html'      
+        templateUrl: 'templates/pages/returns/index.html'
       })
       .when('/submission', {
-        templateUrl: 'templates/pages/submission/index.html'      
+        templateUrl: 'templates/pages/submission/index.html'
       })
       .when('/product-form', {
         templateUrl: 'templates/pages/product-form/index.html'
@@ -47,5 +43,13 @@ angular.module('Store')
         templateUrl: 'templates/pages/cart/index.html',
         controller: 'ShoppingCartController',
         controllerAs: 'shoppingCtrl'
+      })
+      .when('/cart',{
+        templateUrl: 'templates/pages/cart/index.html',
+        controller: 'myCtrl'
+      })
+      .when('/newCart',{
+        templateUrl: 'templates/pages/cart/index.html',
+        controller: 'myCtrl'
       });
   });
