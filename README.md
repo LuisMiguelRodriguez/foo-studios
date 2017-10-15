@@ -43,5 +43,5 @@
 
 ---
 ## License & Copyright
-© Luis Rodriguez, Jennifer Ma, Om Kapoor, Andres Valdovinos; UCI Coding Bootcamp 2017
+© Luis Rodriguez, Jennifer Ma, Isaac Solis, Brandy Antonio; UCI Coding Bootcamp 2017
 Link to Project
